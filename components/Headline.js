@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 // import { Footer } from "../components/Footer";
 // import Links from "../components/Link";
 
-export default function Headlien(props) {
+export function Headlien(props) {
   console.log(props.title);
   return (
     <div>
