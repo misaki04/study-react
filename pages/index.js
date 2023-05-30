@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Footer } from "../components/Footer";
 import Links from "../components/Link";
+import Headlien from "../components/Headline";
 
 export default function Home() {
   return (
@@ -14,13 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>index page</h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
+        <Headlien page="index" />
         <Links />
       </main>
 
