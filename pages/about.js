@@ -1,9 +1,6 @@
 import Head from "next/head";
-// import Image from "next/image";
 import styles from "../styles/Home.module.css";
-// import { Links } from "../components/Link";
 import { Footer } from "../components/Footer";
-// import { Headlien } from "../components/Headline";
 import { Main } from "../components/Main";
 import { Header } from "../components/Header";
 
