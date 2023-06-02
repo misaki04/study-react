@@ -1,0 +1,6 @@
+// 絶対パスで記述
+{
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}
