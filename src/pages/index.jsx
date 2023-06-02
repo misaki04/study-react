@@ -4,7 +4,7 @@ import { Footer } from "src/components/Footer";
 import { Main } from "src/components/Main";
 import { Header } from "src/components/Header";
 import Link from "next/link";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 
 // component 外部に書く場合
 // const handleClick = ((e, foo) => {
@@ -15,10 +15,20 @@ import { useCallback } from "react";
 
 export default function Home() {
   const foo = 1;
+
   const handleClick = useCallback((e) => {
     console.log(e.target.href);
     e.preventDefault();
     alert(foo);
+  }, []);
+
+  useEffect(() => {
+    console.log("マウント時");
+    document.body.style.backgroundColor = "lightblue";
+    return () => {
+      console.log("アンマウント時");
+      document.body.style.backgroundColor = "";
+    };
   }, []);
 
   return (
